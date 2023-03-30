@@ -1,0 +1,243 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  color: #e2e2e2;
+  height: 80px;
+  position: sticky;
+  z-index: 2;
+  transition: 0.3s ease-in-out;
+  top: 0;
+}
+.header .navbar {
+  font-size: 20px;
+}
+.header .navbar .container .navbar-brand {
+  color: white;
+}
+.header .navbar .container .navbar-nav .nav-item {
+  margin: auto 10px;
+}
+.header .navbar .container .navbar-nav .nav-item .nav-link {
+  color: white;
+  border-bottom: 2px solid transparent;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.header .navbar .container .navbar-nav .nav-item .nav-link:hover {
+  border-bottom: 2px solid white;
+  transition: 0.3s;
+}
+
+.scrolled {
+  background-color: rgba(22, 22, 22, 0.9);
+  transition: 0.3s ease-in-out;
+  color: #e2e2e2;
+}
+.scrolled button {
+  background-color: #8d8c8c;
+}
+.scrolled button span {
+  color: #e2e2e2;
+}
+.scrolled a {
+  color: #e2e2e2;
+}
+
+.content {
+  width: 100%;
+  height: auto;
+  margin-top: -80px;
+}
+.content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .content {
+    height: 600px;
+  }
+}
+.zona2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.zona2 h2 {
+  font-size: 2.7rem;
+}
+.zona2 .linea {
+  height: 2px;
+  width: 70%;
+  background-color: #000;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona2 {
+    margin: 20px 10px;
+  }
+  .zona2 h2 {
+    margin: 10px;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+  }
+}
+.zona3 {
+  display: flex;
+  margin: 50px;
+}
+.zona3 .div-izquierda {
+  width: 50%;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.zona3 .div-izquierda img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.zona3 .div-derecha {
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 50px;
+}
+.zona3 .div-derecha h4 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona3 {
+    margin: 20px;
+    flex-direction: column;
+  }
+  .zona3 .div-izquierda {
+    width: 100%;
+    height: 400px;
+  }
+  .zona3 .div-derecha {
+    width: 100%;
+    margin: 20px;
+    margin-left: auto;
+  }
+  .zona3 .div-derecha h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .zona3 .div-derecha p {
+    font-size: 0.9em;
+  }
+}
+.zona4 {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px;
+}
+.zona4 .box-z4 {
+  box-shadow: 9px 10px 26px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 9px 10px 26px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 26px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
+}
+.zona4 .box-z4 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+.zona4 .box-z4 img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona4 {
+    margin: 20px;
+    justify-content: space-around;
+  }
+  .zona4 .box-z4 {
+    width: 80px;
+    height: 80px;
+  }
+}
+.zona6 {
+  margin: 50px;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.zona6 h3 {
+  margin-bottom: 20px;
+}
+.zona6 form .mb-3 .form-control {
+  width: 500px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .zona6 {
+    margin: 20px;
+    padding: auto;
+  }
+  .zona6 h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
+  .zona6 .form button {
+    font-size: 0.9em;
+  }
+  .zona6 .form .mb-3 .form-control {
+    width: 200px;
+    font-size: 0.9em;
+  }
+}
+footer {
+  height: 250px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+footer h3 {
+  font-size: 20px;
+}
+footer .redesSociales-footer i {
+  width: 30px;
+  height: 30px;
+  color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  footer {
+    padding: 20px;
+    height: auto;
+    text-align: center;
+  }
+  footer h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  footer p {
+    font-size: 0.9em;
+  }
+}/*# sourceMappingURL=style.css.map */
