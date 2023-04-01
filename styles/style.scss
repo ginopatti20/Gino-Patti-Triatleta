@@ -63,6 +63,9 @@
 @media (min-width: 320px) and (max-width: 767px){
     .content{
         height: 600px;
+        img{
+            height: 100%;
+        }
     }
 }
 //ZONA 2
@@ -252,3 +255,52 @@ footer{
         }
     }
 }
+.resultados{
+    margin: 50px;
+    h3{
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .oro{
+            background-color: gold;
+            border-radius: 100%;
+        }
+        .plata{
+            background-color: #8d8c8c;
+            border-radius: 100%;
+        }
+        .bronce{
+            background-color: rgb(136, 116, 0);
+            border-radius: 100%;
+        }
+    }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .resultados{
+        font-size: 12px;
+        margin: auto;
+        h3{
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .table{
+            .oro{
+                font-size: 12px;
+            }
+            .plata{
+                font-size: 12px;
+            }
+            .bronce{
+                font-size: 12px;
+            }
+        }
+}
+}
+ 

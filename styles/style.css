@@ -63,6 +63,9 @@
   .content {
     height: 600px;
   }
+  .content img {
+    height: 100%;
+  }
 }
 .zona2 {
   display: flex;
@@ -239,5 +242,52 @@ footer .redesSociales-footer i {
   }
   footer p {
     font-size: 0.9em;
+  }
+}
+.resultados {
+  margin: 50px;
+}
+.resultados h3 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.resultados .table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.resultados .table .oro {
+  background-color: gold;
+  border-radius: 100%;
+}
+.resultados .table .plata {
+  background-color: #8d8c8c;
+  border-radius: 100%;
+}
+.resultados .table .bronce {
+  background-color: rgb(136, 116, 0);
+  border-radius: 100%;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .resultados {
+    font-size: 12px;
+    margin: auto;
+  }
+  .resultados h3 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .resultados .table .oro {
+    font-size: 12px;
+  }
+  .resultados .table .plata {
+    font-size: 12px;
+  }
+  .resultados .table .bronce {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
